@@ -1,28 +1,13 @@
-import React from 'react'
-import './Login.css'
-import { loginURL } from '../../Config/spotify'
-import { ReactComponent as Logo } from '../../Logo/logo.svg'
-import { useDataLayerValue } from '../../DataLayer'
+import React from 'react';
+import './Login.css';
+import { SpotifyLogo } from '../../icons/Icons';
+import { loginUrl } from '../Spotify/Spotify';
 
-function Login() {
-	const [{}, dispatch] = useDataLayerValue()
-
-	const setdemo = () => {
-		dispatch({
-			type: 'SET_DEMO',
-			demo: true,
-		})
-	}
-
-	return (
-		<div className="login">
-			<Logo className="LoginLogo" />
-			<div>
-				<a href={loginURL}>Login with Spotify</a>
-				<div onClick={setdemo}>Continue with a static version instead</div>
-			</div>
-		</div>
-	)
+export default function Login() {
+  return (
+    <div className="login">
+      <SpotifyLogo />
+      <a href={loginUrl}>Login With Spotify</a>
+    </div>
+  );
 }
-
-export default Login
