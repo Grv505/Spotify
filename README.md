@@ -1,4 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🟢 Spotify Clone 
+- Built using ReactJS and the Spotify API
+- User authentication
+- Audio controls
+- Version 3.0
+
+## URL / Live version
+To use the live demo of this app:
+- [louiejancevski.github.io/SpotifyClone](https://louiejancevski.github.io/SpotifyClone/)
+
+## About this project
+This project is a ReactJS clone of the Spotify web player.
+
+The main idea is to have users be authenticated through Spotify, and then display them some basic information about their own account.
+ 
+Users are able to: 
+- Play or pause a song
+- Skip to the next or previous track
+- Control the volume
+- And also entirely mute the audio
+
+## Taking a look inside
+
+When you first go to app, you get presented with a login page in which you are required to login with your Spotify account in order to proceed to see the web player clone. 
+
+![Login Page](https://github.com/louiejancevski/SpotifyClone/blob/master/src/Images/spotify-login.png)
+
+After clicking the 'Login with Spotify' button, you will be taken to the actual Spotify website where you will be asked to authorize this app to see and do things for you. 
+
+These permissions are to view:
+- Content you have recently played
+- The content you are playing
+- The content you are playing and Spotify Connect devices information
+- Your top artists and content
+
+![Spotify Auth](https://github.com/louiejancevski/SpotifyClone/blob/master/src/Images/spotify-auth.png)
+
+Aside from those permissions, the app will also see your name and username, your profile picture, how many followers you have on Spotify and your public playlists.
+
+You can unauthorized this anytime, by going to your Spotify account settings:
+- [spotify.com/us/account/apps/](https://www.spotify.com/us/account/apps/)
+
+And clicking 'Remove Access' from 'SpotifyClone'.
+
+This app also never saves your information at no point.
+
+Now...
+
+After you have logged into Spotify and gave the right access, you will finally be presented with the web player:
+
+![Web Player](https://github.com/louiejancevski/SpotifyClone/blob/master/src/Images/player-demo.png)
+
+In previous versions, you weren't able to do anything at all, and it served no other purpose than visual.
+
+I've made it more functional and dynamic now.
+
+You can access any of your playlists and play any of your songs for a max of 30 seconds, change the volume and mute any song, and also skip to the next or previous track. 
+
+For each song that is being played, the `document.title` will also change accordingly.
+
+![Document title](https://github.com/louiejancevski/SpotifyClone/blob/master/src/Images/document-title.png)
+
+**Note:** I added a static version as well for people that just want to take a quick glance at the app.
+
+## Built with:
+- [ReactJS](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Spotify API](https://developer.spotify.com/documentation/web-api/)
+- [Material UI](https://material-ui.com/)
 
 ## Available Scripts
 
@@ -27,42 +94,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 ## Learn More
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
